@@ -40,7 +40,7 @@ app.get("/",async function(req,res){
   res.render("home",
   {
     startContent:homeStartingContent,
-    posts:ele
+   // posts:ele
   });
  
 });
