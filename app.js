@@ -20,12 +20,23 @@ const postSchema = new mongoose.Schema({
 
 const PostColl = mongoose.model("PostColl", postSchema);
 
+<<<<<<< HEAD
 app.get("/", async function(req, res) {
     const ele = await PostColl.find();
     res.render("home", {
         startContent: homeStartingContent,
         posts: ele
     });
+=======
+app.get("/",async function(req,res){
+  const ele = await PostColl.find();
+  res.render("home",
+  {
+    startContent:homeStartingContent,
+   // posts:ele
+  });
+ 
+>>>>>>> 266ce0b0ffb78cfe41e7ab28347f4e9e940a7bbb
 });
 
 app.get("/about", function(req, res) {
