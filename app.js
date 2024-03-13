@@ -11,8 +11,10 @@ app.use(express.static("public"));
 
 // Connect to MongoDB Atlas
 const uri = "mongodb+srv://godricvasa:N8jgwBGQHhbBfBUs@cluster0.sotnlv5.mongodb.net/";
-mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-
+mongoose.connect(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
 const postSchema = new mongoose.Schema({
     title: String,
     content: String
