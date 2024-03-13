@@ -8,6 +8,7 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
+const homeStartingContent ="hello";
 
 // Connect to MongoDB Atlas
 const uri = "mongodb+srv://godricvasa:7IHLhNUBSeeEkeFZ@blogify.q5vcavh.mongodb.net/?retryWrites=true&w=majority&appName=blogify";
