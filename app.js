@@ -62,7 +62,12 @@ app.get('/posts/:postid', async function(req, res) {
         content: selectedPost.content
     });
 });
-
+app.get("/about", function(req, res) {
+    res.render("about");
+});
+app.get("/contact", function(req, res) {
+    res.render("contact");
+});
 app.listen(port, function() {
     console.log(`Server started on port ${port}`);
 });
