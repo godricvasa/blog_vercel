@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 // Connect to MongoDB Atlas
-const uri = "mongodb+srv://godricvasa:N8jgwBGQHhbBfBUs@cluster0.sotnlv5.mongodb.net/test";
+const uri = "mongodb+srv://godricvasa:7IHLhNUBSeeEkeFZ@blogify.q5vcavh.mongodb.net/?retryWrites=true&w=majority&appName=blogify";
 mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true
