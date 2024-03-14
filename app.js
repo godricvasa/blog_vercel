@@ -25,7 +25,7 @@ const PostColl = mongoose.model("PostColl", postSchema);
 app.get("/", async function(req, res) {
     const ele = await PostColl.find();
     res.render("home", {
-        posts: ele,homeStartingContent:"welcome"
+        posts: ele,startContent:"welcome"
     });
 });
 
